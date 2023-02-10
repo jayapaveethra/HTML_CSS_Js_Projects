@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs,span, Id and Classes</title>
+    <style>
+        .card{
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-header"><!-- Don't repeat ID, but classes can be repeated-->
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <div id="about" class="card"> <!--class-->
+        <h3>About</h3>
+        <p>Lorem ipsum dolor <span class="enhance"> sit amet consectetur adipisicing elit. Adipisci, expedita minus esse </span>blanditiis 
+            magnam ipsa quod deleniti molestias debitis. Hic dolores illo quo in praesentium!</p>
+            <!-- div is a block line element, if we use div in between of paragraph there will space in between the paragraph -->
+            <!-- span is a inline element, if we use in span in between of paragraph there will no space and it will show as paragraph only -->
+    </div>
+
+    <div id="contact">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: 50 Main st, Bosto MA</li>
+            <li>Phone: (555) 555-55</li>
+            <li>Email: abc@gmail.com</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; 2023</p>
+        <!-- if we use &copy it will display copy right symbol -->
+    </div>
+</body>
+</html>
