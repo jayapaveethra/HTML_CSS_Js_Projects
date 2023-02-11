@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model/Margin & Padding</title>
+    <style>
+        /* CSS RESET */
+        *{
+            margin: 0;
+            padding: 0;
+            /* Box sizing will add the width foe the entire property */
+            box-sizing: border-box; /* This will make look like 500px box having 120px padding */
+        }
+        .box{
+            background: #f4f4f4;
+            border: 2px #777 solid;
+            width: 500px;
+            /* padding on all sides */
+            padding: 20px;  /* just adding padding 120px to all the sides, this will be like 500px plus the padding, this is not the right way  */
+
+            /* padding per side */
+            /* The styles which are written down will override above code of padding */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /* padding short hand -> top, right, bottom, left */
+            padding: 10px 20px 10px 20px;
+
+            /* padding shorthand -> top/bottom, right/left */
+            padding: 10px 20px;
+
+            /* MARGIN */
+            /* margin will be around the border, that is outside the border */
+            margin: 20px;
+
+            /* margin per side */
+            /* The styles which are written down will override above code of margin */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* margin short hand -> top, right, bottom, left */
+            margin: 10px 20px 10px 20px;
+
+            /* margin shorthand -> top/bottom, right/left */
+            margin: 10px 20px;
+        }
+
+        .box h3{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, maxime possimus? Repudiandae quidem iste laudantium sit earum, enim tempora, nemo aspernatur quam ducimus dolor accusantium?</p>
+    </div>
+    <div class="box">
+        <h3>Box two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, maxime possimus? Repudiandae quidem iste laudantium sit earum, enim tempora, nemo aspernatur quam ducimus dolor accusantium?</p>
+    </div>
+</body>
+</html>
